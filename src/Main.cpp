@@ -8,25 +8,6 @@
 #include "AlsaAACDevUnicastServerMediaSubsession.h"
 #include "AlsaAACDevMulticastServerMediaSubsession.h"
 
-/*
- * ./liveRtspServer [-p port] [-m multicast?]           \
- *                  [-w width] [-h height] [-f fps]     \
- *                  [-A fmt] [-F freq] [-c channels]    \
- *                  <-v video dev> <-a audio dev>
- * 
- * -p port:         rtsp server port(default "8554")
- * -m multicast?:   is multicast? yes or no(default "no")
- * -W width:        video width(default "320")
- * -H height:       video height(default "240")
- * -f fps:          video fps(defalut "15")
- * -A fmt:          audio sampling format,"s16le"、"s24le"、"s32le"(defalut "s16le")
- * -F freq:         audio sampling frequency(default "44100")
- * -c channels:     audio number of sampling channels(default "2")
- * -v video dev:    video device("/dev/videon")
- * -a audio dev:    audio device("hw:x,y")
- * -h:              help
- */
-
 static void help()
 {
     printf("./liveRtspServer [-p port] [-m multicast?]              \\\n"
